@@ -4,10 +4,10 @@ namespace Exercicio08
 {
     public class Conta
     {
-        public string Numero;
-        public double Limite;
-        public double Saldo;
-        public Agencia Agencia;
+        public string Numero { get; set; }
+        public double Limite { get; set; }
+        public double Saldo { get; set; }
+        public Agencia Agencia { get; set; }
 
         public void Depositar(double valor) 
         {

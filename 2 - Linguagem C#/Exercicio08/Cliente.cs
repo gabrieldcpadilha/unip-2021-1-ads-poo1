@@ -5,10 +5,10 @@ namespace Exercicio08
 {
     public class Cliente
     {
-        public string Nome;
-        public string Documento;
-        public List<Cartao> Cartoes;
-        public Conta Conta;
+        public string Nome { get; set; }
+        public string Documento { get; set; }
+        public List<Cartao> Cartoes { get; set; }
+        public Conta Conta { get; set; }
 
         public void Depositar(double valor) 
         {
