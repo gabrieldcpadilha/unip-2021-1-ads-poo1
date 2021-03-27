@@ -1,4 +1,28 @@
-﻿using System;
+﻿/**
+Imagine que uma empresa está interessada em cadastrar seus prestadores de serviços.
+Tais prestadores podem ser PF ou PJ, com as seguintes informações (relevantes no domínio em questão):
+
+Pessoa Física (PF):
+Nome
+CPF
+Data de Nascimento
+Email
+Telefone
+CEP
+Logradouro
+Complemento
+
+Pessoa Jurídica (PJ):
+Razão Social
+CNPJ
+Email
+Telefone
+CEP
+Logradouro
+Complemento
+**/
+
+using System;
 
 namespace Exercicio2
 {
@@ -6,7 +30,11 @@ namespace Exercicio2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PessoaFisica pf = new PessoaFisica();
+            pf.Nome = "Gabriel";
+            pf.Email = "gdcpadilha@outlook.com";
+
+            Console.WriteLine(pf.Nome);
         }
     }
 }
